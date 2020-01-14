@@ -46,14 +46,11 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
     SwipeRefreshLayout swipeRefreshLayout;
     @BindView(R.id.recyclerview)
     RecyclerView recyclerView;
-    List<Country> countryList;
-    CountryAdapter adapter;
+    private List<Country> countryList;
+    private CountryAdapter adapter;
 
     private LinearLayoutManager llm;
     private static final String layoutManagerPositionKey = "layoutManagerPositionKey";
-    private static final String listKey = "listKey";
-    private static final String titleKey = "listKey";
-
     private int position;
 
     @Override
