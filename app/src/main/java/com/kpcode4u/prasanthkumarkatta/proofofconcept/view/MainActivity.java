@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
                 }
                 countryList = countryResponse.getCountryList();
                 System.out.println("kpk: length: " + countryList.size());
-                //Todo:kpk: parsing List to Recyclerview Adapter
+                //Todo:kpk: parsing List to RecyclerviewAdapter
                 if (countryList.size() != 0) {
                     adapter = new CountryAdapter(MainActivity.this, countryList);
                     recyclerView.setAdapter(adapter);
