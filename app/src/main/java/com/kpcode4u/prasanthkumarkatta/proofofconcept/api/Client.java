@@ -8,8 +8,8 @@ public class Client {
 
     private static Retrofit retrofit = null;
 
-    public static Retrofit getClient(){
-        if (retrofit == null){
+    public static Retrofit getClient() {
+        if (retrofit == null) {
             retrofit = new Retrofit.Builder()
                     .baseUrl(baseUrl)
                     .addConverterFactory(GsonConverterFactory.create())

@@ -5,7 +5,4 @@
     <string name="todo">TODO</string>
     <string name="internet_connected_success_message">Internet Connected</string>
     <string name="refresh_sucess_msg">Country Data Refreshed</string>
-    <string name="alert_title_msg">Need Permissions</string>
-    <string name="permission_granted_msg">Permission Granted</string>
-    <string name="permission_denied_msg">Permission Denied</string>
 </resources>

@@ -17,9 +17,6 @@ import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
-
 public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.CountryInfo> {
     private Context mContext;
     private List<Country> countryList;
@@ -48,6 +45,7 @@ public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.CountryI
             holder.description.setText(description);
         }
 
+        //Todo: Image loading using Picasso
         String imgUrl = country.getImageHref();
         if (imgUrl != null) {
             Picasso.get()
@@ -71,11 +69,11 @@ public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.CountryI
     }
 
     class CountryInfo extends RecyclerView.ViewHolder {
-       // @BindView(R.id.titleTv_row)
+        // @BindView(R.id.titleTv_row)
         TextView title;
-       // @BindView(R.id.descriptionTv_row)
+        // @BindView(R.id.descriptionTv_row)
         TextView description;
-       // @BindView(R.id.imageView_row)
+        // @BindView(R.id.imageView_row)
         ImageView imageView;
 
         CountryInfo(@NonNull View itemView) {

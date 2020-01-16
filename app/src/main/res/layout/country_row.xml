@@ -1,65 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     style="@style/cardViewStyle"
+    android:layout_margin="@dimen/dimen_5dp"
     app:cardCornerRadius="@dimen/dimen_10dp"
-    app:cardElevation="@dimen/dimen_10dp"
-    android:layout_margin="@dimen/dimen_5dp">
+    app:cardElevation="@dimen/dimen_10dp">
+
     <LinearLayout
-        android:layout_width="match_parent"
         style="@style/cardViewStyle"
+        android:layout_width="match_parent"
         android:background="#EEECEC">
+
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_weight="9"
             android:layout_height="wrap_content"
+            android:layout_weight="9"
             android:orientation="vertical"
             android:padding="@dimen/dimen_10dp">
+
             <TextView
                 android:id="@+id/titleTv_row"
                 style="@style/cardViewStyle"
-                android:text="@string/title"
-                android:padding="@dimen/dimen_5dp"
-                android:textColor="@color/blue_color"
-                android:textStyle="bold"
-                android:textSize="@dimen/dimen_20sp"
                 android:gravity="start"
-                />
-            <LinearLayout
-                style="@style/cardViewStyle">
+                android:padding="@dimen/dimen_5dp"
+                android:text="@string/title"
+                android:textColor="@color/blue_color"
+                android:textSize="@dimen/dimen_20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout style="@style/cardViewStyle">
+
                 <TextView
                     android:id="@+id/descriptionTv_row"
                     android:layout_width="0dp"
-                    android:layout_weight="6"
                     android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:gravity="start"
+                    android:padding="@dimen/dimen_5dp"
                     android:text="@string/description"
                     android:textColor="@color/lite_black_color"
-                    android:textStyle="normal"
                     android:textSize="@dimen/dimen_18sp"
-                    android:padding="@dimen/dimen_5dp"
-                    android:gravity="start"
-                    />
+                    android:textStyle="normal" />
+
                 <ImageView
                     android:id="@+id/imageView_row"
                     android:layout_width="0dp"
-                    android:layout_weight="4"
                     android:layout_height="match_parent"
-                    android:src="@mipmap/ic_launcher"
+                    android:layout_weight="4"
+                    android:contentDescription="@string/todo"
                     android:scaleType="centerCrop"
-                    android:contentDescription="@string/todo" />
+                    android:src="@mipmap/ic_launcher" />
             </LinearLayout>
         </LinearLayout>
+
         <ImageView
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_keyboard_arrow_right_lite__black_24dp"
-            android:scaleType="centerCrop"
-            android:padding="5dp"
             android:layout_gravity="center_vertical"
+            android:layout_weight="1"
             android:contentDescription="@string/todo"
-            />
+            android:padding="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_keyboard_arrow_right_lite__black_24dp" />
 
     </LinearLayout>
 
